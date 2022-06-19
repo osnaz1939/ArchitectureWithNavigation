@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shared_navigation"
+    app:startDestination="@id/oneSharedFragment">
+
+    <fragment
+        android:id="@+id/oneSharedFragment"
+        android:name="ost.host.shared_module.OneSharedFragment"
+        android:label="fragment_one_shared"
+        tools:layout="@layout/fragment_one_shared" >
+        <action
+            android:id="@+id/action_oneFutureFirstFragment_to_oneFutureSecondFragment"
+            app:destination="@id/twoSharedSecondFragment" />
+    <deepLink
+        app:uri="android-app://ost.host.architecturewithnavigation/shared_fragment_one" />
+    </fragment>
+    <fragment
+        android:id="@+id/twoSharedSecondFragment"
+        android:name="ost.host.shared_module.TwoSharedFragment"
+        android:label="fragment_one_future_second"
+        tools:layout="@layout/fragment_two_shared" />
+
+</navigation>

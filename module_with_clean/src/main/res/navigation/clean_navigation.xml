@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clean_navigation"
+    app:startDestination="@id/oneCleanFragment">
+
+    <fragment
+        android:id="@+id/oneCleanFragment"
+        android:name="ost.host.module_with_clean.presentation.OneCleanFragment"
+        android:label="fragment_one_clean"
+        tools:layout="@layout/fragment_one_clean" />
+</navigation>

@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/first_navigation"
+        android:enabled="true"
+        android:title="First" />
+    <item
+        android:id="@+id/second_navigation"
+        android:enabled="true"
+        android:title="Second" />
+    <item
+        android:id="@+id/clean_navigation"
+        android:enabled="true"
+        android:title="Clean" />
+</menu>

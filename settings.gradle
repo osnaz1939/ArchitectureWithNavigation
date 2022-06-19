@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "ArchitectureWithNavigation"
+include ':app'
+include ':navigation'
+include ':module_with_nav_first'
+include ':module_with_nav_second'
+include ':module_with_clean'
+include ':shared_module'
+include ':base_interfaces'
